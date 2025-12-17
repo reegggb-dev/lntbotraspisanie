@@ -1,0 +1,1609 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+
+  <title>Расписание занятий на день</title>
+  <link type="text/css" media="all"   rel="stylesheet" href="/css/clsPT.css">
+  <link type="text/css" media="all"   rel="stylesheet" href="/css/menuPT.css">
+  <link type="text/css" media="all"   rel="stylesheet" href="/css/jgrowlPT.css">
+  <link type="text/css" media="all"   rel="stylesheet" href="/css/jquery.loadmask.css">
+  <link type="text/css" media="all"   rel="stylesheet" href="/css/jquery.dynDateTimePT.css">
+  <link type="text/css" media="print" rel="stylesheet" href="/css/print.css">
+
+
+  <script type="text/javascript" src="/js/jquery-1.5.1.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.bgiframe.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.animate-colors-min.js"></script>
+  <script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="/js/jquery.lavalamp.1.3.3.js"></script>
+  <script type="text/javascript" src="/js/jquery.abyz.js"></script>
+  <script type="text/javascript" src="/js/jquery.jgrowl.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.jqpopup.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.form.js"></script>
+  <script type="text/javascript" src="/js/jquery.placeholder.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.loadmask.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.dynDateTime.js"></script>
+
+  <script type="text/javascript" src="/js/menu.js"></script>
+  <script type="text/javascript" src="/js/ishnk.js"></script>
+
+</head>
+<body>
+  <img id="toTop" class="over" src="/img/top.png" title="Наверх" alt="Наверх"
+    onClick="$('body,html').animate({scrollTop:0},800); return false">
+<div id="mainContainer">
+<div class="bmenu" style="z-index:480;">
+  <ul class="menu">
+    <li class="noLava start">&nbsp;</li>
+        
+    <li>
+      <a href='/menu/1/1' class='transition'
+          title='Сведения об образовательной организации'
+          
+          >
+        <span>Сведения об ОО</span>
+      </a>
+        <div><ul>
+                <li>
+          <a href='/' class='transition'
+              
+              
+              >
+            <span>Новости</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/info' class='transition'
+              
+              
+              >
+            <span>Основные сведения</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/menu/10/3' class='transition parent'
+              
+              
+              >
+            <span>Наша история</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/about/history/history' class='transition'
+              
+              
+              >
+            <span>История / Тарих</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/history/biography' class='transition'
+              
+              
+              >
+            <span>О руководителях / Лидерлар</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/history/profobr' class='transition'
+              title='Профессиональное образование в техникуме'
+              
+              >
+            <span>Проф образование в техникуме</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/history/social' class='transition'
+              
+              
+              >
+            <span>Социальное партнерство</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/history/achievements' class='transition'
+              
+              
+              >
+            <span>Наши достижения</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/about/structure' class='transition'
+              title='Структура и органы управления'
+              
+              >
+            <span>Структура и органы управления</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/menu/10/5' class='transition parent'
+              
+              
+              >
+            <span>Документы</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/about/npb/doc' class='transition'
+              
+              
+              >
+            <span>Правовые документы</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/report' class='transition'
+              title='Отчет о результатах самообследования'
+              
+              >
+            <span>Отчет о самообследовании</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/npb/akt' class='transition'
+              title='Локальные нормативные акты'
+              
+              >
+            <span>Локальные акты</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/npb/predpisania' class='transition'
+              
+              
+              >
+            <span>Предписания</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/about/work/program_r.pdf' class='transition'
+              title='Программа развития техникума'
+              
+              >
+            <span>Программа развития</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/menu/10/6' class='transition parent'
+              
+              
+              >
+            <span>Образование</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/about/programs' class='transition'
+              
+              
+              >
+            <span>Образовательные программы</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/plans' class='transition'
+              title='Учебные планы по специальностям'
+              
+              >
+            <span>Учебные планы</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/education/график.pdf' class='transition'
+              
+              
+              >
+            <span>Календарный учебный график</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/quantity' class='transition'
+              
+              
+              >
+            <span>Численность</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/abit/license.pdf' class='transition'
+              title='Лицензия на осуществление образовательной деятельности'
+              
+              >
+            <span>Лицензия</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/about/fgos_standart' class='transition'
+              
+              
+              >
+            <span>Образовательные стандарты</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/menu/10/8' class='transition parent'
+              title='Руководство. Педагогический состав'
+              
+              >
+            <span>Руководство. Пед. состав</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/contact/contact' class='transition'
+              title='Сведения о руководстве'
+              
+              >
+            <span>Руководство</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='http://lntrt.ru/staffs/info?type=teachers&staffs=0' class='transition'
+              title='Сведения о педагогических работниках'
+              
+              >
+            <span>Педагогический состав</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/staffs/info?type=staffs&staff=0' class='transition'
+              title='Информация о сотрудниках'
+              
+              >
+            <span>Сотрудники</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/about/mto' class='transition'
+              title='Материально-техническое обеспечение и оснащенность'
+              
+              >
+            <span>МТО и оснащенность</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/npb/fhd1' class='transition'
+              title='Стипендии и иные виды материальной поддержки'
+              
+              >
+            <span>Стипендии и иные виды мат. поддержки</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/paid' class='transition'
+              
+              
+              >
+            <span>Платные образовательные услуги</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/npb/fhd' class='transition'
+              title='Финансово-хозяйственная деятельность'
+              
+              >
+            <span>Финансово-хоз. деятельность</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/vacancy/vacancy' class='transition'
+              
+              
+              >
+            <span>Вакантные места</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/education/prof_today' class='transition'
+              
+              
+              >
+            <span>Профсоюз</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/staffs/documents/ПЛАН_УВР.pdf' class='transition'
+              
+              
+              >
+            <span>План учебно-воспитательной работы</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/terror/terror' class='transition'
+              title='Профилактика терроризма и экстремизма'
+              
+              >
+            <span>Антитеррор</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/menu/10/25' class='transition parent'
+              title='Служба трудоустройства'
+              
+              >
+            <span>Трудоустройство</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/about/works/center' class='transition'
+              
+              
+              >
+            <span>Центр карьеры</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/works/docum' class='transition'
+              
+              
+              >
+            <span>Документация</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/works/info' class='transition'
+              title='Сведения о трудоустройстве выпускников'
+              
+              >
+            <span>Сведения</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/works/faq' class='transition'
+              
+              
+              >
+            <span>Полезные советы</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/partners' class='transition'
+              
+              
+              >
+            <span>Социальные партнеры</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/about/international' class='transition'
+              
+              
+              >
+            <span>Международное сотрудничество</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/disability' class='transition'
+              
+              
+              >
+            <span>Доступная среда</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/about/food' class='transition'
+              
+              
+              >
+            <span>Организация питания обучающихся</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+    </li>
+    <li class='noLava delimiter'>&nbsp;</li>
+    <li>
+      <a href='/menu/1/2' class='transition'
+          
+          
+          >
+        <span>Абитуриенту</span>
+      </a>
+        <div><ul>
+                <li>
+          <a href='/about/npb/doc' class='transition'
+              title='Учредительные документы'
+              
+              >
+            <span>Документы</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/abit/spec' class='transition'
+              title='Набор по специальностям'
+              
+              >
+            <span>Специальности</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/abit/info' class='transition'
+              
+              
+              >
+            <span>Информация</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/abit/price' class='transition'
+              
+              
+              >
+            <span>Стоимость обучения</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/abit/docs' class='transition'
+              
+              
+              >
+            <span>Перечень документов</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/about/npb/polojenia/правила%20приема.pdf' class='transition'
+              
+              
+              >
+            <span>Правила приема</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/abiturients/addAbiturient' class='transition'
+              title='Подать заявление на поступление в техникум'
+              
+              >
+            <span>Подать заявление</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/abiturients/freeEnrolled' class='transition'
+              
+              
+              >
+            <span>Списки зачисленных</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/abit/hostel_list' class='transition'
+              title='Списки на заселение в общежитие'
+              
+              >
+            <span>Списки на заселение</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+    </li>
+    <li class='noLava delimiter'>&nbsp;</li>
+    <li>
+      <a href='/menu/1/4' class='transition'
+          
+          
+          >
+        <span>Студенту</span>
+      </a>
+        <div><ul>
+                <li>
+          <a href='/menu/7/1' class='transition parent'
+              title='Очное отделение'
+              
+              >
+            <span>Очное отд.</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/menu/2/3' class='transition parent'
+              
+              
+              >
+            <span>Студенту</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/students/schedule' class='transition'
+              
+              
+              >
+            <span>Расписание занятий</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/menu/2/4' class='transition parent'
+              
+              
+              >
+            <span>Преподавателю</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/staffs/schedule' class='transition'
+              
+              
+              >
+            <span>Расписание занятий</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/education/график.pdf' class='transition'
+              title='График учебного процесса ГАПОУ "ЛНТ"'
+              
+              >
+            <span>График учебного процесса</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/staffs/documents' class='transition'
+              
+              
+              >
+            <span>Документы</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/staffs/aids' class='transition'
+              
+              
+              >
+            <span>Учебные пособия</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/menu/2/10' class='transition parent'
+              
+              
+              >
+            <span>Расписание</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/fulltime/daySchedule' class='transition'
+              
+              
+              >
+            <span>На день</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/fulltime/schedule' class='transition'
+              
+              
+              >
+            <span>На семестр</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/calls' class='transition'
+              
+              
+              >
+            <span>Звонки</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/menu/7/2' class='transition parent'
+              title='Заочное отделение'
+              
+              >
+            <span>Заочное отд.</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/files/education/СПЕЦИАЛЬНОСТИ_В_ЗАОЧНОЙ_ФОРМЕ_ОБУЧЕНИЯ.pdf' class='transition'
+              title='Информация для поступающих'
+              
+              >
+            <span>Поступающим</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/menu/50/2' class='transition parent'
+              title='Расписание занятий'
+              
+              >
+            <span>Расписание занятий</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/files/students/zaochnoe/3.pdf' class='transition'
+              
+              
+              >
+            <span>2-3 курс</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/students/zaochnoe/4.pdf' class='transition'
+              
+              
+              >
+            <span>3,4 курс</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/students/zaochnoe/5.pdf' class='transition'
+              
+              
+              >
+            <span>4,5 курс</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/calls' class='transition'
+              
+              
+              >
+            <span>Расписание звонков</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='https://docs.google.com/spreadsheets/d/1Du3KuFP9Ah-rgbJ0OVfMlAAf1NjXWU-Vwha2KfxrFHM/edit?usp=sharing' class='transition'
+              title='Консультации по Дипломному проектированию'
+              
+              >
+            <span>Консультации по ДП</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/students/aids?department=Заочное&spec=0&kurs=0&teacher=0&subject=0' class='transition'
+              
+              
+              >
+            <span>Учебные пособия</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/students/zaochnoe/график_з.pdf' class='transition'
+              title='График учебного процесса'
+              
+              >
+            <span>График уч. процесса</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/correspondence/dp' class='transition'
+              title='Темы дипломного проектирования'
+              
+              >
+            <span>Темы ДП</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/correspondence/kp' class='transition'
+              title='Темы курсового проектирования'
+              
+              >
+            <span>Темы КП</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='http://moodle.lntrt.ru/course/index.php?categoryid=55' class='transition'
+              
+              
+              >
+            <span>Переподготовка</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/buch/kvit.pdf' class='transition'
+              
+              
+              >
+            <span>Квитанция за обучение</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/menu/7/3' class='transition parent'
+              title='Информация о библиотеке, фонде книг'
+              
+              >
+            <span>Библиотека</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/library/info' class='transition'
+              title='Информация о библиотеке, фонде книг, периодических изданиях'
+              
+              >
+            <span>Информация</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/library/periodical' class='transition'
+              title='Периодические издания'
+              
+              >
+            <span>Периодика</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/library/action' class='transition'
+              title='Мероприятия, проводимые библиотекой'
+              
+              >
+            <span>Мероприятия</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/library/inprint' class='transition'
+              title='ЛНТ в печати'
+              
+              >
+            <span>ЛНТ в печати</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/library/newspaper' class='transition'
+              title='Газета ЛНТ'
+              
+              >
+            <span>Газета ЛНТ</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/library/inforesurs' class='transition'
+              title='Информационно-образовательные ресурсы'
+              
+              >
+            <span>Информ. ресурсы</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+
+      </ul></div>
+    </li>
+    <li class='noLava delimiter'>&nbsp;</li>
+    <li>
+      <a href='/menu/1/6' class='transition'
+          title='Производственная практика'
+          
+          >
+        <span>Практика</span>
+      </a>
+        <div><ul>
+                <li>
+          <a href='/students/industrial/blancs' class='transition'
+              
+              
+              >
+            <span>Бланки по практике</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/students/industrial/Руководители%20практик.pdf' class='transition'
+              title='Распределение часов по ППП'
+              
+              >
+            <span>Распределение часов</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/students/industrial/practice_place.pdf' class='transition'
+              
+              
+              >
+            <span>Места прохождения</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/students/industrial/education' class='transition'
+              
+              
+              >
+            <span>Перечень рабочих профессий</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+    </li>
+    <li class='noLava delimiter'>&nbsp;</li>
+    <li>
+      <a href='/menu/1/7' class='transition'
+          
+          
+          >
+        <span>Метод. кабинет</span>
+      </a>
+        <div><ul>
+                <li>
+          <a href='/methodical/info' class='transition'
+              
+              
+              >
+            <span>Информация</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/methodical/kpk' class='transition'
+              title='График прохождения стажировки'
+              
+              >
+            <span>График КПК и стажировки</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/methodical/attest' class='transition'
+              
+              
+              >
+            <span>Аттестация</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/methodical/olimp' class='transition'
+              
+              
+              >
+            <span>Конкурсы, олимпиады</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/methodical/help' class='transition'
+              
+              
+              >
+            <span>В помощь препод-лю</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/methodical/anniversary' class='transition'
+              
+              
+              >
+            <span>Архив мероприятий</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+    </li>
+    <li class='noLava delimiter'>&nbsp;</li>
+    <li>
+      <a href='/menu/1/8' class='transition'
+          title='Информация о работе воспитательной службы'
+          
+          >
+        <span>Восп. cлужба</span>
+      </a>
+        <div><ul>
+                <li>
+          <a href='/education/documents' class='transition'
+              title='Перечни документов воспитальной службы'
+              
+              >
+            <span>Документация</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/menu/25/8' class='transition parent'
+              
+              
+              >
+            <span>Общежитие</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/education/hostel' class='transition'
+              title='Информация об общежитии'
+              
+              >
+            <span>Инф-ция об общежитии</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/education/doc_hostel' class='transition'
+              
+              
+              >
+            <span>Документация</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/education/psychological' class='transition parent'
+              
+              
+              >
+            <span>Социально-психологическая служба</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/education/profilaktika' class='transition'
+              
+              
+              >
+            <span>Профилактика правонарушений</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/education/pdd' class='transition'
+              
+              
+              >
+            <span>Профилактика нарушений ПДД</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/education/pav' class='transition'
+              
+              
+              >
+            <span>Профилактика употребления ПАВ</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/education/zoj' class='transition'
+              
+              
+              >
+            <span>Пропаганда ЗОЖ</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/education/mediation' class='transition'
+              
+              
+              >
+            <span>Служба медиации</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/education/ovz' class='transition'
+              title='Сопровождение инвалидов и лиц с ОВЗ'
+              
+              >
+            <span>Инвалиды и лица с ОВЗ</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/education/terror' class='transition'
+              title='Профилактика экстремизма и терроризма'
+              
+              >
+            <span>Экстремизм и терроризм</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/education/bank' class='transition'
+              title='психологическая копилка для руководителей групп'
+              
+              >
+            <span>Для руководителей групп</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/education/studsovet' class='transition'
+              title='Студенческий совет'
+              
+              >
+            <span>Студсовет</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/education/gto' class='transition'
+              title='Готов к труду и обороне'
+              
+              >
+            <span>ГТО</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/menu/25/12' class='transition parent'
+              
+              
+              >
+            <span>Профсоюз</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/education/studprof' class='transition'
+              title='Студенческий профком'
+              
+              >
+            <span>Студенческий профком</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/education/ruk' class='transition'
+              
+              
+              >
+            <span>Руководителям групп</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/education/sport' class='transition'
+              title='Студенческий спортивный клуб &laquo;ПЛАМЯ&raquo;'
+              
+              >
+            <span>Студ. спорт. клуб &laquo;ПЛАМЯ&raquo;</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/vosp/ВОЕННЫЕ_ВУЗЫ.pdf' class='transition'
+              title='Высшие военно-учебные заведения Минобороны России'
+              
+              >
+            <span>ВВУЗы Минобороны России</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+    </li>
+    <li class='noLava delimiter'>&nbsp;</li>
+    <li>
+      <a href='/menu/1/9' class='transition'
+          title='Дополнительные курсы'
+          
+          >
+        <span>Доп. курсы</span>
+      </a>
+        <div><ul>
+                <li>
+          <a href='/additional/info' class='transition'
+              
+              
+              >
+            <span>Общая информация</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/additional/programs' class='transition'
+              
+              
+              >
+            <span>Направления курсов</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/additional/ГРАФИК_уч_процесса_МЦПК.pdf' class='transition'
+              
+              
+              >
+            <span>График учебного процесса</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/menu/60/6' class='transition parent'
+              
+              
+              >
+            <span>Итоговая аттестация</span>
+          </a>
+        <div><ul>
+                <li>
+          <a href='/additional/form_ia' class='transition'
+              
+              
+              >
+            <span>Форма итоговой аттестации</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/additional/work_tests' class='transition'
+              title='Материал для подготовки к итоговой аттестации'
+              
+              >
+            <span>Материал для подготовки к ИА</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+        </li>
+        <li>
+          <a href='/files/education/ДНЕВНИК_ПРОИЗВОДСТВЕННОГО_ОБУЧЕНИЯ.doc' class='transition'
+              title='Дневник производственного обучения'
+              
+              >
+            <span>Дневник произв. обучения</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+    </li>
+    <li class='noLava delimiter'>&nbsp;</li>
+    <li>
+      <a href='/menu/1/11' class='transition'
+          
+          
+          >
+        <span>Разное</span>
+      </a>
+        <div><ul>
+                <li>
+          <a href='/questions' class='transition'
+              title='Ответы на вопросы посетителей'
+              
+              >
+            <span>Вопрос-Ответ</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/anticor/anticor' class='transition'
+              title='Антикоррупционная работа'
+              
+              >
+            <span>Антикорруп-я работа</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/vacancy/vacancy' class='transition'
+              title='Вакансии техникума'
+              
+              >
+            <span>Вакансии техникума</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/menu' class='transition'
+              
+              
+              >
+            <span>Карта сайта</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='https://lntrt.ru' class='transition'
+              title='Электронный Колледж'
+              
+              >
+            <span>АИС ЭлКо</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/photoReviews' class='transition'
+              
+              
+              >
+            <span>Фотообзор</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='#' class='transition'
+              
+              onclick='loginForm($(this))'
+              >
+            <span>Вход</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+    </li>
+    <li class='noLava delimiter'>&nbsp;</li>
+    <li>
+      <a href='/methodical/innov' class='transition'
+          title='Инновационная деятельность'
+          
+          >
+        <span>Иннов. деятельность</span>
+      </a>
+        <div><ul>
+                <li>
+          <a href='http://moodle.lntrt.ru/' class='transition'
+              
+              
+              >
+            <span>Онлайн курсы</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+    </li>
+    <li class='noLava delimiter'>&nbsp;</li>
+    <li>
+      <a href='/grant-rf/grant' class='transition'
+          title='Национальный проект &laquo;Образование&raquo;'
+          
+          >
+        <span>Нац. проект &laquo;Образование&raquo;</span>
+      </a>
+        <div><ul>
+                <li>
+          <a href='/grant-rf/accred' class='transition'
+              
+              
+              >
+            <span>Аккредитация мастерских</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/grant-rf/grafics' class='transition'
+              
+              
+              >
+            <span>Графики загрузки мастерских</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/grant-rf/programs' class='transition'
+              title='Перечень образовательных программ'
+              
+              >
+            <span>Перечень обр. программ</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/about/work/program_r.pdf' class='transition'
+              
+              
+              >
+            <span>Программа развития</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/files/grant/план_занятости.pdf' class='transition'
+              title='План занятости мастерских 2020-2024'
+              
+              >
+            <span>План занятости 2020-2024</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/grant-rf/docs' class='transition'
+              
+              
+              >
+            <span>Нормативные документы</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/grant-rf/photo' class='transition'
+              
+              
+              >
+            <span>Банк фотоматериалов</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+    </li>
+    <li class='noLava delimiter'>&nbsp;</li>
+    <li>
+      <a href='/digital/digital_edu' class='transition'
+          title='Фед. проект &laquo;Цифровая образовательная среда&raq'
+          
+          >
+        <span>&laquo;Цифр. образ. среда&raquo;</span>
+      </a>
+        <div><ul>
+                <li>
+          <a href='/digital/docs' class='transition'
+              
+              
+              >
+            <span>Документы</span>
+          </a>
+  
+        </li>
+        <li>
+          <a href='/digital/otchet' class='transition'
+              title='Отчет о выполнении дорожной карты'
+              
+              >
+            <span>Отчет о выполнении</span>
+          </a>
+  
+        </li>
+
+      </ul></div>
+    </li>
+    <li class='noLava delimiter'>&nbsp;</li>
+    <li>
+      <a href='/contact/contact' class='transition'
+          title='Контакты'
+          
+          >
+        <span>Контакты</span>
+      </a>
+  
+    </li>
+
+    <li class="noLava end">&nbsp;</li>
+  </ul>
+</div>
+  <div id="content">
+    <div id="subcontent"><div class='userMenu'><span>отд.</span><button id='selDepartment'>Очное</button><span>дата</span><button id='selDate' data-date='2025-12-17'>17/12/2025</button><span>&nbsp;</span><button id='changeType'>I_смена</button>
+          <script type='text/javascript'>changeTypes=["I_смена","II_смена"]</script><span> </span><button onClick='PrintAll()'>Распечатать</button></div>
+
+<div id='forPrint'></div>
+
+<script type='text/javascript'>
+  var selDepartment=function(){};
+  var selGroup=getSchedule;
+  var selDate=function(date){ loader_open(); 
+    $.get('/save',{dateSched:date,academicYear:date}, function(){ getSchedule()});
+  };
+  
+  function getSchedule(){ var self=$(this); loader_open();
+    $.get('/schedule/daySchedule',{},function(rezult){ $('#forPrint').html(rezult); loader_close()});
+  }
+
+$(function(){ getSchedule()})
+</script>
+    </div>
+  </div>
+</div>
+<div id='login' style='display:none; text-align:right'>
+  <form action="/login" method="post">
+    <table style='margin:10px auto 5px'><tbody><tr>
+      <td>Имя</td>
+      <td style='padding-left:10px'>
+        <input name="Name" type="text" tabindex=1 placeholder='Введите имя' style='width:100px'
+          onKeyDown="if (event.keyCode==13){ event.preventDefault(); 
+            $('#addCong_p form input[name=Password]').focus()}">
+      </td>
+    </tr><tr>
+      <td style='padding-top:5px'>Пароль</td>
+      <td style='padding:5px 0 0 10px'>
+        <input name="Password" type="password" tabindex=2 placeholder='Введите пароль' 
+          style='width:100px' onKeyDown="if (event.keyCode==13){ event.preventDefault(); 
+            $('#addCong_p form input[name=Captcha]').focus()}">
+      </td>
+    </tr></tbody></table>
+    <table style='margin:0 10px'><tbody><tr>
+      <td colspan=2 style='text-align:center'>Введите текст с картинки</td>
+    </tr><tr>
+      <td style='text-align:right; width:50%'>
+        <img id=imgCaptcha style='cursor: pointer' onClick="$(this).attr('src','/captcha/'+Math.random())" 
+          src='/img/loader-round.gif' alt='Капча'>
+      </td>
+      <td style='padding-left:10px; text-align:left; width:50%'>
+        <input name="Captcha" type="text" style='width:50px' tabindex=3 
+          onKeyDown="if (event.keyCode==13){ event.preventDefault(); loginSubmit()}">
+      </td>
+    </tr><tr>
+      <td colspan=2 style='text-align:center; padding-top:5px'>
+        <input type='checkbox' name='remember_me' value='1' tabindex=5> запомнить меня
+      </td>
+    </tr><tr>
+      <td colspan=2 style='text-align:center; padding:10px 0'>
+        <button onclick="loginSubmit(); return false" tabindex=4>Отправить</button>
+      </td>
+    </tr></tbody></table>
+  </form>
+</div>
+<div id='password' style='display:none; text-align:right'>
+  <h3>Смените пароль</h3>
+  <form action="/users/changeParam" method="post">
+    <input type='hidden' name='oldPassword'>
+    <table style='margin:10px auto 5px'><tbody><tr>
+      <td style='padding-top:5px'>новый пароль</td>
+      <td style='padding:5px 0 0 10px'>
+        <input name="newPassword" type="password" tabindex=1 placeholder='Введите пароль' 
+          style='width:100px' onKeyDown="if (event.keyCode==13){ event.preventDefault(); 
+            $('#password_p form input[name=newPassword2]').focus()}">
+      </td>
+    </tr><tr>
+      <td style='padding-top:5px'>Повторите пароль</td>
+      <td style='padding:5px 0 0 10px'>
+        <input name="newPassword2" type="password" tabindex=2 placeholder='Повторите пароль' 
+          style='width:100px' onKeyDown="if (event.keyCode==13){ event.preventDefault(); passwordSubmit()}">
+      </td>
+    </tr></tbody></table>
+    <table style='width:100%;margin:0 10px'><tbody><tr>
+      <td style='text-align:center; padding:10px 0'>
+        <button onclick="passwordSubmit(); return false" tabindex=3>Сохранить</button>
+      </td>
+    </tr></tbody></table>
+  </form>
+</div>
+<script type='text/javascript'>
+var loginBox;
+function loginForm(self){ loginBox=self;
+  $('#login').jqpopup_open(self);
+  $('#login_p img').attr('src', '/captcha/'+Math.random());
+  $('#login_p form input[name=Name]').focus();
+}
+function loginSubmit(){ var form=$("#login_p form"); form.mask("Отправляю...");
+  form.ajaxSubmit(function(rezult){
+    if (rezult=='OK'){ loader_close('Авторизация пройдена, перезагружаюсь');
+      $('#login_p').remove(); document.location.reload(); return}
+    if (rezult=='12345'){ loader_close('Смените пароль');
+      var pass=$('#login_p form input[name=Password]').val();
+loader_close("="+pass);      
+      $('#login_p').remove(); 
+      $('#password').jqpopup_open(loginBox);
+      $('#password_p form input[name=oldPassword]').val(pass);
+      return;
+    }
+    form.unmask(); input='Name';
+    if (rezult=='Captcha'){ input=rezult; rezult='Неверные цифры с картинки'}
+    if (rezult=='Name'){ input=rezult; rezult='Введите имя'}
+    if (rezult=='Password'){ input=rezult; rezult='Введите пароль'}
+    loader_close(rezult); $('input[name='+input+']', form).focus();
+  });
+}
+  function passwordSubmit(){ var form=$("#password_p form"); form.mask("Отправляю...");
+    form.ajaxSubmit(function(rezult){
+      if (rezult=='OK'){ 
+        loader_close('Замена произведена, перезагружаюсь');
+        $('#changeParam_p').remove(); 
+        document.location.reload(); 
+        return;
+      }
+      form.unmask(); loader_close(rezult); $('#changeParam_p form input:eq(0)',form).focus();
+    });
+  }
+</script>
+  <div id="footer"><div><span>
+    Официальный сайт &laquo;ГАПОУ "Лениногорский нефтяной техникум"&raquo;
+    &reg; АИС&nbsp;&laquo;ЭлКо&raquo; &copy;<span title="Лениногорский нефтяной техникум">ЛНТ</span>,
+    автор Р.Р. Рамазанов,
+    v.9.6 
+  </span></div></div>
+  <div class='loader'><img id='loader-line'  src='/img/loader-line.gif'  alt='гружусь...'></div>
+  <div class='loader'><img id='loader-round' src='/img/loader-round.gif' alt='гружусь...'></div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44710565-1', 'lntrt.ru');
+  ga('send', 'pageview');
+</script>
+</body></html>
+

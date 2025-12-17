@@ -1,0 +1,113 @@
+# New handlers for main menu actions
+
+@router.callback_query(F.data == "my_group")
+async def handle_my_group(callback: CallbackQuery, state: FSMContext):
+    """
+    Show schedule for user's default group.
+    """
+    user_id = callback.from_user.id
+    group = db.get_default_group(user_id)
+    
+    if not group:
+        await callback.answer("❌ У вас не установлена группа по умолчанию", show_alert=True)
+        return
+    
+    # Save group to state
+    await state.update_data(group=group)
+    await state.set_state(ScheduleStates.group_selected)
+    
+    await callback.message.edit_text(
+        f"✅ Группа: {group}\n\n"
+        "📅 Выберите день:",
+        reply_markup=get_date_keyboard()
+    )
+    await callback.answer()
+
+
+@router.callback_query(F.data == "select_group")
+async def handle_select_group(callback: CallbackQuery, state: FSMContext):
+    """
+    Show group selection menu.
+    """
+    await state.set_state(ScheduleStates.waiting_for_group)
+    
+    await callback.message.edit_text(
+        "📚 Выберите группу:",
+        reply_markup=get_groups_keyboard(page=0)
+    )
+    await callback.answer()
+
+
+@router.callback_query(F.data == "set_default_group")
+async def handle_set_default_group(callback: CallbackQuery, state: FSMContext):
+    """
+    Start process to set default group.
+    """
+    await state.set_state(ScheduleStates.setting_default_group)
+    
+    await callback.message.edit_text(
+        "⚙️ **Установка группы по умолчанию**\n\n"
+        "Выберите вашу группу:",
+        reply_markup=get_groups_keyboard(page=0),
+        parse_mode="Markdown"
+    )
+    await callback.answer()
+
+
+@router.callback_query(F.data == "toggle_notifications")
+async def handle_toggle_notifications(callback: CallbackQuery):
+    """
+    Toggle notifications on/off.
+    """
+    user_id = callback.from_user.id
+    current_state = db.get_notifications_enabled(user_id)
+    new_state = not current_state
+    
+    db.set_notifications(user_id, new_state)
+    
+    status_emoji = "🔔" if new_state else "🔕"
+    status_text = "включены" if new_state else "выключены"
+    
+    # Check if user has default group
+    default_group = db.get_default_group(user_id)
+    
+    message = f"{status_emoji} Уведомления **{status_text}**\n\n"
+    
+    if new_state and not default_group:
+        message += "⚠️ Для получения уведомлений установите группу по умолчанию!\n\n"
+    elif new_state:
+        message += f"✅ Каждый день в 18:00 вы будете получать расписание на завтра для группы **{default_group}**\n\n"
+    
+    message += "Выберите действие:"
+    
+    await callback.message.edit_text(
+        message,
+        reply_markup=get_main_menu_keyboard(has_default_group=bool(default_group)),
+        parse_mode="Markdown"
+    )
+    await callback.answer(f"Уведомления {status_text}")
+
+
+@router.callback_query(F.data == "back_to_main")
+async def handle_back_to_main(callback: CallbackQuery, state: FSMContext):
+    """
+    Return to main menu.
+    """
+    await state.clear()
+    
+    user_id = callback.from_user.id
+    default_group = db.get_default_group(user_id)
+    
+    welcome_text = "📚 Главное меню\n\n"
+    
+    if default_group:
+        welcome_text += f"Ваша группа: **{default_group}**\n\n"
+    
+    welcome_text += "Выберите действие:"
+    
+    await callback.message.edit_text(
+        welcome_text,
+        reply_markup=get_main_menu_keyboard(has_default_group=bool(default_group)),
+        parse_mode="Markdown"
+    )
+    await callback.answer()
